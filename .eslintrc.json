@@ -1,0 +1,27 @@
+{ 
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "rules": {
+    "no-plusplus": ["error", {
+      "allowForLoopAfterthoughts": true
+    }],
+    "no-else-return": ["error", {
+      "allowElseIf": true
+    }],
+    "no-underscore-dangle": ["error", {
+      "allowAfterThis": true
+    }],
+    "eqeqeq": "off",
+    "comma-dangle": "off",
+    "semi": "off",
+    "no-use-before-define": ["error", {
+      "functions": false
+    }],
+    "no-var": "off"
+  }
+}
